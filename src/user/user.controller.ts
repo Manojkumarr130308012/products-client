@@ -9,6 +9,7 @@ export class UserController {
     getAllUsers() {
       return this.client.send({ cmd: 'get_all_users' }, {});
     }
+    
   
     @Get(':id')
     getUserByID(@Param('id') id) {
